@@ -1,0 +1,15 @@
+sources:
+  - name: landing
+    description: "Source data from the L1_LANDING schema in the SLEEKMART_OMS database."
+    database: SLEEKMART_OMS
+    schema: L1_LANDING
+    tables:
+      - name: cust
+        identifier: customers
+        description: "Customer information from the source system."
+      - name: ordr
+        identifier: orders
+        description: "Order information from the source system."
+      - name: ordritms
+        identifier: orderitems
+        description: "Order item details associated with each order."

@@ -7,4 +7,4 @@ SELECT
     Quantity * UnitPrice as TotalPrice,
     Updated_at
 FROM
-    L1_LANDING.ORDERITEMS
+    {{ source('landing','ordritms') }}
