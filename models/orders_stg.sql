@@ -5,7 +5,7 @@ SELECT
     EmployeeID,
     StoreID,
     Status as StatusCD,
-    StatusDesc,
+    Status as StatusDesc,
     Updated_at
 FROM
     {{ source('landing', 'ordr') }}
